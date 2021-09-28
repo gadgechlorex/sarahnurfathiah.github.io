@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="aboutme.css">
+
+    <title>S3RA</title>
+    <link rel="icon" href="https://bit.ly/3kuPnED" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b330721f73.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        setInterval(abc, 1000);
+
+        function abc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("container").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "notify.asp", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+
+<body id="container" onload="javascript:abc()">
+    <div id="content">
+        <div id="left_column" lazy="loaded">
+            <div>
+                <a href="index.html"><img src="p.PNG" class="center"></a>
+                <div class="title">
+                    <h2 class="firsth2">SARAH NURFATHIAH</h2>
+                    <h2 class="secondh2">ABDUL RAHMAN</h2>
+                </div>
+                <div class="tabs">
+                    <a class="navcontent" href="aboutme.html">ABOUT ME</a><br>
+                    <a class="navcontent" href="contact.html">CONTACT ME</a>
+                    <br>
+                    <a class="navcontent" href="portfolio.html">PORTFOLIO</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <a class="icon" href="https://www.linkedin.com/in/sarahnurfathiah"><i class="fab fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a class="icon" href="mailto:sarahnurfathiah@gmail.com"><i class="fab fa-google-plus-square"
+                        aria-hidden="true"></i></a>
+                <a class="icon" href="https://www.instagram.com/sarahnurfathiah/"><i class="fab fa-instagram-square"
+                        aria-hidden="true"></i></i></a>
+
+            </div>
+        </div>
+
+        <div id="right_column">
+            <div class="righttitle">
+                About me
+
+            </div>
+            <div class="AMcontent">
+                <div class="amcont1">
+                    <img src="pic.PNG">
+                </div>
+                <div class="amcont2">Hi! My name is Sarah, a third year student of Electronic-Electrical Engineering,
+                    specialised in Computer
+                    Science in University Technology of Malaysia. Passionate in electronics, programmings as well as
+                    creative works using Adobe Illustrator and Adobe Photoshop. Enjoy being in a great environment to
+                    produce quality works. <br><br> I've always been excited to came across a great idea that can give back to our community. Would love to have the opportunity to create interesting projects with
+                    different people so do hit me up to collaborate together!
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

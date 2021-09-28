@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>S3RA</title>
+    <link rel="icon" href="https://bit.ly/3kuPnED" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b330721f73.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        setInterval(abc, 1000);
+
+        function abc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("container").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "notify.asp", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+
+<body id="container" onload="javascript:abc()">
+    <div id="content">
+        <div id="left_column" lazy="loaded">
+            <div>
+                <a href="index.html"><img src="p.PNG" class="center"></a>
+                <div class="title">
+                    <h2 class="firsth2">SARAH NURFATHIAH</h2>
+                    <h2 class="secondh2">ABDUL RAHMAN</h2>
+                </div>
+                <div class="tabs">
+                    <a class="navcontent" href="aboutme.html">ABOUT ME</a><br>
+                    <a class="navcontent" href="contact.html">CONTACT ME</a>
+                    <br>
+                    <a class="navcontent" href="portfolio.html">PORTFOLIO</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <a class="icon" href="https://www.linkedin.com/in/sarahnurfathiah"><i class="fab fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a class="icon" href="mailto:sarahnurfathiah@gmail.com"><i class="fab fa-google-plus-square"
+                        aria-hidden="true"></i></a>
+                <a class="icon" href="https://www.instagram.com/sarahnurfathiah/"><i class="fab fa-instagram-square"
+                        aria-hidden="true"></i></i></a>
+
+            </div>
+        </div>
+
+        <div id="right_column">
+            <div class="righttitle">
+                Portfolio Gallery
+
+            </div>
+            <div class="CMcontent">
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity1.PNG" alt="activity1" style="width:100%">
+                            <h3>Induction Camp 2017</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity2.PNG" alt="activity2" style="width:100%">
+                            <h3>Sumo-Car Competition 2018</h3>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity3.PNG" alt="activity3" style="width:100%">
+                            <h3>UPSI Netball Competition'18</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity4.PNG" alt="activity4" style="width:100%">
+                            <h3>Dapur Jalanan KL 2017</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END GRID -->
+                <!-- 2nd row -->
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity5.PNG" alt="activity5" style="width:100%">
+                            <h3>Royal Cup 2019 (Badminton)</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity6.PNG" alt="activity6" style="width:100%">
+                            <h3>Canselor Star 2019</h3>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity7.PNG" alt="activity7" style="width:100%">
+                            <h3>Ultimate Open 2020 (Frisbee)</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img class="center-cropped" src="activity8.PNG" alt="activity8" style="width:100%">
+                            <h3>Diploma Convocation 2019</h3>
+                            
+                        </div>
+
+                    </div>
+                    <!-- END GRID -->
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

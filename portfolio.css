@@ -1,0 +1,187 @@
+
+body{
+    margin: 0;
+    background: url(background.jpg) no-repeat center fixed;
+    background-size: cover;
+    
+}
+#left_column {
+    float:left;
+    position: absolute;
+    max-height:100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.2);
+    
+
+    width : 25%;/* for example */
+}
+
+#right_column {
+    float:left;
+    position: absolute;
+    max-height:100%;
+    height:100%;
+    margin-left : 25%; /* left column's width */
+    /*background-color: rgb(253, 194, 180);*/
+    background-color: rgb(255, 255, 255, 0.1);
+    width : 75%;
+    overflow: scroll;
+}
+#left_column>div>a>img{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    
+    height: 35%;
+    width: 35%;
+}
+#left_column>div{
+    text-align: center;
+    
+    
+}
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a.navcontent:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.title{
+    font-family: 'Nova Square', cursive;
+    text-decoration-line: underline;
+    color: azure;
+}
+.firsth2{
+    margin-bottom: 4px;
+}
+
+.secondh2 {
+    margin-top: 0;
+}
+
+.tabs {
+    font-family: 'Padauk', sans-serif;
+    position: center;
+    padding-left: 90px;
+    font-size: large;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+
+
+.box {
+    margin-top: 2.4em;
+    margin-bottom: 0em;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    }
+.box  a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-top: 150px;
+    font-size: 40px;
+    transition: all ease-in-out 250ms;
+}
+.box a:hover {
+    color: #b3b3b3;
+}
+
+
+.icon {
+    
+    margin-right: .2em;
+    margin-left: .2em;
+}
+.righttitle {
+    margin-top: 40px;
+    font-family: 'Sacramento', cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 140px;
+    animation: 2s ease-out 0s 1 FadeIn;}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.CMcontent{
+    padding: 20px;
+    display: -webkit-flex;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-self:auto;
+    align-items:flex-start;
+    align-content:flex-start;
+}
+
+/*gallery section */
+.row {
+  margin: 8px -16px;
+  display: flex;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }}
+
+.center-cropped{
+  object-fit:cover;
+    object-position: center;  
+    width: 200px; /* width of container */
+    height: 200px; /* height of container */
+    overflow: hidden
+}

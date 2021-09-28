@@ -1,0 +1,148 @@
+
+body{
+    margin: 0;
+    background: url(background.jpg) no-repeat center fixed;
+    background-size: cover;
+    
+}
+#left_column {
+    float:left;
+    position: absolute;
+    max-height:100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255, 0.2);
+    
+
+    width : 25%;/* for example */
+}
+
+#right_column {
+    float:left;
+    position: absolute;
+    max-height:100%;
+    height:100%;
+    margin-left : 25%; /* left column's width */
+    /*background-color: rgb(255, 234, 214);*/
+    background-image: linear-gradient(to bottom right, rgb(255, 231, 196), rgb(255, 255, 255) );
+    width : 75%;
+    overflow: scroll;
+}
+#left_column>div>a>img{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    
+    height: 35%;
+    width: 35%;
+}
+#left_column>div{
+    text-align: center;
+    
+    
+}
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+a.navcontent:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+
+.title{
+    font-family: 'Nova Square', cursive;
+    text-decoration-line: underline;
+    color: azure;
+}
+.firsth2{
+    margin-bottom: 4px;
+}
+
+.secondh2 {
+    margin-top: 0;
+}
+
+.tabs {
+    font-family: 'Padauk', sans-serif;
+    position: center;
+    padding-left: 90px;
+    font-size: large;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+
+
+.box {
+    margin-top: 2.4em;
+    margin-bottom: 0em;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    }
+.box  a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-top: 150px;
+    font-size: 40px;
+    transition: all ease-in-out 250ms;
+}
+.box a:hover {
+    color: #b3b3b3;
+}
+
+
+.icon {
+    
+    margin-right: .2em;
+    margin-left: .2em;
+}
+.righttitle {
+    margin-top: 40px;
+    font-family: 'Sacramento', cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 140px;
+    animation: 2s ease-out 0s 1 FadeIn;}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+.AMcontent{
+    
+    display: flex;
+}
+
+.amcont1{
+    flex: 40%;
+    padding-top: 30px;
+    padding-left:50px;
+    padding-right: 20px;
+}
+
+.amcont1>img{
+    height: 350px;
+}
+
+
+.amcont2{
+    flex: 60%;
+    padding-top: 30px;
+    padding-right: 20px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 170%;
+}
+
